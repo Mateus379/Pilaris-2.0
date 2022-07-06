@@ -9,58 +9,95 @@ text-decoration: none;
 
 body {
 font-size: 100%;
-background: #FFFFFF;
+background-color: #fffcf6;
 }
 
 .cabeçalho {
-margin-left: -60px;
 width: 2000px;
 display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: space-around;
 gap: 5px 100px;
-padding: 24px;
+padding: 20px 20px;
 background-color: #FFC268;
 position: fixed;
 }
 
-
-.cabeçalho-menu {
-display: flex;
-gap: 32px;
-}
-
-
-.logo-nome{
-margin-left: -55px;
-font-family: 'Righteous', cursive;
-color: #FFFFFF;
-font-weight: 400;
-font-size: 22px;
-}
-
-
-.cabeçalho-menu-item {
+ul li {
+list-style-type: none;
+display:inline-flex;
 font-family: 'Sarala', sans-serif;
 color: #FFFFFF;
 font-weight: 400;
 font-size: 18px;
 }
-
-.cabeçalho-menu-item:hover {
-color:black
-transition: .3s;
+    
+nav ul li {
+padding: 5px 20px;
+padding-top: 10px;
 }
 
-.conteudo {
-padding-top: 160px;
-margin-bottom: 318px;
+.cabeçalho-menu {
+display: flex;
+gap: 20px;
 }
 
-.conteudo2 {
+.logo-nome{
+font-family: 'Righteous', cursive;
+color: #FFFFFF;
+font-weight: 400;
+font-size: 22px;
+}
+    
+.botao-doação{
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 5px 100px;
+padding: 9px 30px;
+border-style: none;
+border: 0.5px solid white;
+border-radius: 18px;
+font-family: 'Sarala', sans-serif;
+font-weight: 400;
+font-size: 18px;
+color: #ffffff;
+background-color: transparent;
+cursor: pointer;
+}
+
+.botao-doação:hover {
+color: #FFC268;
+background-color: white;
+transition: 0.3s;
+}
+
+.conteudo{
 padding-top: 160px;
-margin-bottom: 200px;
+margin-bottom: 260px;
+margin-left: 10%;
+margin-right: 10%;
+}
+
+.fundo-planta2d {
+padding-top: 130px;
+padding-bottom: 220px;
+background: linear-gradient(68.15deg, #FFC268 12.62%, #ffc774 88.61%);
+margin-left: 10%;
+margin-right: 10%;
+border-radius: 25px;
+}
+
+.conteudo-planta2d {
+border-radius: 10px;
+}
+
+.conteudo-depoimentos {
+padding-top: 100px;
+margin-bottom: 320px;
+margin-left: 10%;
+margin-right: 10%;
 }
 
 .conteudo-principal {
@@ -94,7 +131,6 @@ display: flex;
 flex-direction: column;
 gap: 32px;
 padding-top: 100px;
-
 }
 
 .conteudo-principal-escrito-titulo {
@@ -103,7 +139,21 @@ font-weight: 400;
 font-size: 60px;
 color: #FFC268;
 }
-    
+
+.titulo-planta2d {
+font-family: 'Righteous', cursive;
+font-weight: 400;
+font-size: 60px;
+color: white;
+}
+
+.subtitulo-planta2d {
+font-family: 'Sarala', sans-serif;
+font-weight: 400;
+font-size: 20px;
+color: white;
+}
+   
 .conteudo-principal-escrito-subtitulo {
 font-family: 'Sarala', sans-serif;
 font-weight: 400;
@@ -129,16 +179,65 @@ width: 600px;
 padding-left: 20px;
 }
 
+
+
 .conteudo-principal-escrito-botao {
+background-color: white;
+border: 0.5px solid #FFC268;
+width: 155px;
+height: 57px;
+border-radius: 18px;
+font-family: 'Sarala', sans-serif;
+color: #FFC268;
+font-weight: 400;
+font-size: 20px;
+}
+
+.conteudo-principal-escrito-botao:hover {
+color: #ffffff;
+background-color: #FFC268;
+transition: 0.3s;
+border: 0.5px solid white;
+cursor: pointer;
+}
+
+.conteudo-principal-escrito-botao2 {
 background-color: #FFC268;
 width: 155px;
 height: 57px;
+border-radius: 18px;
 border: none;
-border-radius: 21px;
 font-family: 'Sarala', sans-serif;
-color: #FFFFFF;
+color: white;
 font-weight: 400;
 font-size: 20px;
+}
+
+.conteudo-principal-escrito-botao2:hover {
+color: #ffffff;
+background-color: #ffba53;
+transition: 0.3s;
+cursor: pointer;
+}
+
+.botao-pae4-page5 {
+background-color: #FFC268;
+border: #FFC268;
+width: 155px;
+height: 57px;
+border-radius: 18px;
+font-family: 'Sarala', sans-serif;
+color: white;
+font-weight: 400;
+font-size: 20px;
+}
+
+.botao-pae4-page5:hover {
+color: #FFC268;
+background-color: #fffcf6;
+transition: 0.3s;
+cursor: pointer;
+border: 0.5px solid #FFC268;
 }
 
 .conteudo-principal-imagem {
@@ -148,10 +247,10 @@ padding-top: 110px;
 padding-right: 15px;
 }
 
-.conteudo-principal-imagem2 {
-height: 255px;
-width: 705px;
-padding-top: 110px;
+.img-planta2d {
+height: 260px;
+width: 710px;
+padding-top: 90px;
 padding-right: 15px;
 }
 
@@ -174,26 +273,9 @@ padding-right: 30px;
 height: 459px;
 width: 668px;
 padding-top: 100px;
-padding-right: 30px;
-    
-}
-    
-.rodape {
-padding: 32px;
+padding-right: 30px; 
 }
 
-.rodape2 {
-padding: 0px;
-}
-
-a {
+a{
 color: inherit;
 }
-
-
-
-border-top: 0.4px solid #FFF2E7;
-background: linear-gradient(68.15deg, #2F2325 2.62%, #F59062 96.61%);
-position: fixed;
-
-
