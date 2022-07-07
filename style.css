@@ -137,6 +137,9 @@ display: flex;
 flex-direction: column;
 gap: 32px;
 padding-top: 100px;
+margin-left: 10%;
+margin-right: 10%;
+padding-left: 30px;
 }
 
 .conteudo-principal-escrito-titulo {
@@ -163,7 +166,14 @@ color: white;
 .conteudo-principal-escrito-subtitulo {
 font-family: 'Sarala', sans-serif;
 font-weight: 400;
-font-size: 25px;
+font-size: 26px;
+color: #FFC268;
+}
+
+.subtitulo-page4 {
+font-family: 'Sarala', sans-serif;
+font-weight: 400;
+font-size: 26px;
 color: #FFC268;
 }
 
@@ -294,6 +304,7 @@ padding-top: 160px;
 margin-bottom: 260px;
 margin-left: 10%;
 margin-right: 10%;
+padding-left: 70px ;
 }
 
 .imagem-page2 {
@@ -311,8 +322,8 @@ padding-right: 30px;
 }
 
 .imagem-page4{
-height: 460px;
-width: 669px;
+height: 430px;
+width: 639px;
 padding-top: 90px;
 padding-right: 30px;
 }
